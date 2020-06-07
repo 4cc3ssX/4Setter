@@ -10,7 +10,7 @@ class asetter(object):
 	response_data = ""
 	lhost = "0.0.0.0"
 	lport = 40
-	response_file = "index.html"
+	response_file = ""
 	doc_path =  '/var/www' # os.getcwd()+'/'
 	def header(self):
 		mime_ext = {
@@ -110,7 +110,7 @@ class asetter(object):
 			except KeyboardInterrupt:
 				print(f"[{r}!{n}] Shutting down the server... ", end='')
 				s.close()
-				print("OK")
+				print(f"{g}OK{n}")
 				sys.exit(0)
 			self.response_client = conn.recv(1024).decode()
 			self.response_file = re.split(' ', self.response_client.splitlines()[0])[1].replace("%20", " ")
