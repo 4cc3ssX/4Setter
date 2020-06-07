@@ -1,2 +1,2 @@
 # 4Setter
-This is the http server with python3 using pure socket. If some issues or bugs have in this script, please report me to improve this script. Have a nice day! Happy coding! &lt;3
+This script can serve as a http server and u can change the document root path in script near line 14 doc_path = '/var/www' and also set new port at line 12 lport = 40 is default. Every folder request is default forbidden for security reason. You can change your default index file name in line 37 index_file = ['index.html', 'index.htm'] is default. Happy Coding! <3
